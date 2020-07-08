@@ -23,7 +23,7 @@ module Grape
       end
 
       def call(env)
-        dup.call!(env)
+        dup.call!(env).to_a
       end
 
       def call!(env)
